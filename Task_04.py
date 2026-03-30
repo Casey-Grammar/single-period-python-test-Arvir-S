@@ -18,6 +18,22 @@
 
 def expand_subject_codes(codes):
     # Write your code here
+    subject_map = {
+        "ENG": "English",
+        "MAT": "Mathematics",
+        "SCI": "Science",
+        "HIS": "History",
+        "ART": "Art"
+    }
+    expanded_list = []
+   
+    for code in codes:
+        # If the code exists in our dictionary, add its value to the new list
+        if code in subject_map:
+            expanded_list.append(subject_map[code])
+           
+    return expanded_list
+
     pass
 
 
